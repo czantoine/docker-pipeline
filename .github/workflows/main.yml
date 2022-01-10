@@ -1,6 +1,5 @@
 name: ci
 on: [push]
-
 jobs:
   docker:
     runs-on: ubuntu-latest
