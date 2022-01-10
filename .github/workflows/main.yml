@@ -9,4 +9,4 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Test job.py
         run: |
-         python /czantoine/pp/dir/job.py
+         python ./pp/dir/job.py
