@@ -15,3 +15,4 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - run: python ./dir/job.py
       - run: docker build -t getting-started .
+      - run: docker images
