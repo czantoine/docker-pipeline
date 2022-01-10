@@ -16,3 +16,4 @@ jobs:
       - run: python ./dir/job.py
       - run: docker build -t username/image_name:V01 .
       - run: docker images
+      - run: docker login -u ${{ secrets.USR }} -p ${{ secrets.PWD }}
