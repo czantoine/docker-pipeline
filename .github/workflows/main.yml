@@ -8,17 +8,12 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - uses: actions/checkout@v2
-      - name: Test job.py
       
       - name: setup python
         uses: actions/setup-python@v2
         with:
           python-version: '3.7.7' # install the python version needed
-          
-      - name: install python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        
           
       - name: execute py script # run sj-gobierno.py to get the latest data
         run: python /dir/job.py
